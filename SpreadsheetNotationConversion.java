@@ -15,7 +15,7 @@ public class SpreadsheetNotationConversion {
 
         int mod = columnNumber % 26;
         mod = mod == 0 ? 26 : mod;
-        if (nthInteration == 0) {
+        if (nthInteration == 1) {
             return rowNumber + 1 + String.valueOf((char) (64 + mod));
         }
 
@@ -24,6 +24,6 @@ public class SpreadsheetNotationConversion {
     }
 
     public static void main(String[] args) {
-        System.out.println(getSpreadsheetNotation(1482));
+        System.out.println(getSpreadsheetNotation(7000));
     }
 }
